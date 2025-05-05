@@ -7,14 +7,15 @@
 "use strict"
 
 /**
- * This function determines the type of triangle.
+ * This function conducts multiplication with addition.
  */
 function multiplyThroughAddition() {
-  const positiveInteger = parseInt(document.getElementById("positive-integer").value);
-  const counter = parseInt(document.getElementById("counter").value);
-  const product = 0;
+  const factor = parseInt(document.getElementById("factor").value)
+  const multiplier = parseInt(document.getElementById("multiplier").value)
+  const product = 0
 
-  while (counter > 0) {
-    product = product + positiveInteger
+  while (multiplier > 0) {
+    product = product + factor
+    multiplier = multiplier - 1
   }
 }
