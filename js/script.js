@@ -11,11 +11,14 @@
  */
 function multiplyThroughAddition() {
   const factor = parseInt(document.getElementById("factor").value)
-  const multiplier = parseInt(document.getElementById("multiplier").value)
-  const product = 0
+  let multiplier = parseInt(document.getElementById("multiplier").value)
+  let product = 0
 
   while (multiplier > 0) {
     product = product + factor
     multiplier = multiplier - 1
   }
+
+  // Display result
+  document.getElementById("result").innerText = "The product is " + product + "."
 }
